@@ -12,30 +12,290 @@
 /* ==       CODES COULEURS           */
 /*---------------------------------------- */
 /*
-Noir (text) :			#000
-Gris foncé (liens, h1) :		#008dde
-Gris (Liens visités) :	#0006a1
-Gris clair (h2) :		#747474*/
 
-
+Background (light grey) : #F2F2F2
+Background button (purple) : #9356DC
+Background Footer (drak grey) : #424242
+Icon "Fonctionnement" (grey) : #6e6e6e
+Box-shadow : #e0e0e0
 
 
 /*------------------------------------------*/
 /*==		RÉGLAGES MOBILES		*/
 /*------------------------------------------*/
 
+/*------------------------------*/
+/*          HOME PAGE           */
+/*------------------------------*/
+
+body{
+    margin: 0;
+}
+
+main{
+    font-family: "roboto", arial, sans-serif;
+    font-size: 16px;
+}
+
+a{
+    text-decoration: none;
+}
+
+strong{
+    font-size: 1.2em;
+}
+
+.title, h1, strong{
+    letter-spacing: -0.7px;
+}
+
+/*--------------------------*/
+/*        HEADER            */
+/*--------------------------*/
+
+.head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo_header{
+    padding: 0.5em;
+    width: 12em;
+}
+
+.search{
+    margin-left: 2em;
+}
+
+.presentation{
+    background-color: #F2F2F2;
+    text-align: center;
+    padding-bottom: 5em;
+}
+
+.title{
+    margin: 2em;
+    margin-bottom: 0;
+}
+
+.subtitle{
+    font-size: 1.3em;
+    margin: 2em;
+    margin-top: 0;
+}
+
+.btn_purple{
+    border: 0px solid transparent;
+    border-radius: 50px;
+    padding: 1em 1.5em 1em 1.5em;
+    background: linear-gradient(to bottom right, #FF79DA,#9356DC ) ;
+    color: #FFFFFF;
+    box-shadow: 5px 5px 5px #e0e0e0;
+}
+
+/*-------------------------*/
+/*           NAV           */
+/*-------------------------*/
+
+nav{
+    display: flex;
+    flex-direction: column;
+    margin: 2em 0 3em 2em;
+
+    position: relative;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}    
+
+.number{
+    display: flex;
+    justify-content: center;
+
+    border: 0px solid transparent;
+    border-radius: 100px;
+    width: 1em;
+    height: 1em;
+    padding: 0.2em;
+    background-color: #9356DC;
+    color: #FFFFFF;
+
+    position: absolute;
+    left: -0.5em;
+}
+
+.fas.fa-mobile-alt, .fas.fa-list-ul, .fas.fa-store{
+    padding-right: 0.4em;
+    color: #6e6e6e;
+}
+
+.btn_nav{
+    display: flex;
+    border: 0px solid transparent;
+    background-color: #F2F2F2;
+    box-shadow: 5px 5px 7px #e0e0e0 ;
+    border-radius: 15px;
+    padding: 1.7em;
+    color: #000000;
+    width: 80%;
+    font-weight: bold;
+}
+
+.icon{
+    display: flex;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+
+/*-------------------------------*/
+/*          RESTAURANTS          */
+/*-------------------------------*/
+
+.bloc_restaurant{
+    background-color: #F2F2F2;
+    padding: 2em;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box{
+    border: 0px solid transparent;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px #e0e0e0;
+    color: #000000;
+    background-color: #FFFFFF;
+
+    margin-bottom: 1.5em;
+}
+
+.img_restaurant{
+    border: 0px solid transparent;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
+}
+
+.restaurant_name{
+    padding-left: 1em;
+}
+
+/*--------------------------*/
+/*          FOOTER          */
+/*--------------------------*/
+
+footer{
+    padding: 2em;
+    background-color: #424242;
+}
+
+.logo_footer{
+    width: 6em;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+li{
+    padding-bottom: 0.5em;
+}
+
+.foot, .fas.fa-utensils, .fas.fa-hands-helping{
+    padding-right: 0.5em;
+    color: #FFFFFF;
+}
+
+.fas.fa-hands-helping{
+    font-size: 0.75em;
+}
 
 
+/*--------------------------------------*/
+/*             MENU PAGES               */
+/*--------------------------------------*/
 
+/*----------------------------------*/
+/*              HEADER              */
+/*----------------------------------*/
 
+.head_menu{
+    display: flex;
+}
 
+.return{
+    display: flex;
+    align-items: center;
+    margin-left: 1em;
+    color: #000000;
+}
+
+.logo_menu{
+    padding: 0.5em;
+    width: 10em;
+}
+
+/*---------------------------------*/
+/*             MENU                */
+/*---------------------------------*/
+
+.bloc_menu{
+    border: 0px solid transparent;
+    border-radius: 30px 30px 0 0;
+
+    background-color: #F2F2F2;
+}
+
+.img_menu{
+    width: 100%;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: auto;
+}
+
+.restaurant_title{
+    font-family: "Shrikhand", arial, sans-serif;
+}
+
+.card_title{
+    padding-left: 1em;
+}
+
+.menu_title{
+    margin-left: 0.2em;
+}
+
+.commander{
+    display: flex;
+    justify-content: center;
+    margin: 2em;
+    margin-bottom: 3em;
+}
+
+.btn_menu{
+    padding-left: 3.5em;
+    padding-right: 3.5em;
+}
 
 /*---------------------------------------------*/
 /*==		OPTIMISATION POUR GRANDS ÉCRANS 	*/ 
 /*--------------------------------------------*/
 
 
-@media only screen and (min-width:640px){
+/*@media only screen and (min-width:640px){
 
 
-}
+}*/
