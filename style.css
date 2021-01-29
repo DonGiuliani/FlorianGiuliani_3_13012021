@@ -457,7 +457,7 @@ li{
     background-color: #424242;
     opacity: 0.9;
     animation: loader;
-    animation-delay: 0.1s;
+    animation-delay: 3s;
     animation-fill-mode: forwards;
     z-index: 2;
     display: flex;
