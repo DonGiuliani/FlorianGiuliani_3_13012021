@@ -63,6 +63,7 @@ strong{
 .logo{
     padding: 0.5em;
     width: 12em;
+    margin: auto;
 }
 
 .fas.fa-map-marker-alt{
@@ -94,6 +95,7 @@ form{
     background-color: #F2F2F2;
     text-align: center;
     padding-bottom: 5em;
+    width: 100%;
 }
 
 .title{
@@ -127,52 +129,43 @@ form{
 nav{
     display: flex;
     flex-direction: column;
-    margin: 2em 0 3em 2em;
-    position: relative;
 }
 
-.btn{
-    display: flex;
-    align-items: center;
-    margin-bottom: 1em;
-}    
+nav h1{
+    margin-left: 1em;
+}
 
 .number{
     display: flex;
     justify-content: center;
-
-    border: 0px solid transparent;
     border-radius: 100px;
+    background-color: #9356DC;
+    color: #FFFFFF;
     width: 1em;
     height: 1em;
     padding: 0.2em;
-    background-color: #9356DC;
-    color: #FFFFFF;
-
     position: absolute;
-    left: -0.5em;
+    left: -0.7em;
 }
 
 .btn_nav{
+    position: relative;
     display: flex;
-    border: 0px solid transparent;
     background-color: #F2F2F2;
     box-shadow: 5px 5px 7px #e0e0e0 ;
     border-radius: 15px;
     padding: 1.7em;
+    padding-left: 0.5em;
     color: #000000;
-    width: 80%;
     font-weight: bold;
-}
-
-.icon{
-    display: flex;
-    padding-left: 1.5em;
-    padding-right: 1.5em;
+    width: 80%;
+    margin-bottom: 1em;
 }
 
 .fas.fa-mobile-alt, .fas.fa-list-ul, .fas.fa-store{
-    padding-right: 0.4em;
+    display: flex;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
     color: #6e6e6e;
 }
 
@@ -194,7 +187,6 @@ nav{
 .box{
     position: relative;
 
-    border: 0px solid transparent;
     border-radius: 15px;
     box-shadow: 5px 5px 5px #e0e0e0;
     color: #000000;
@@ -205,7 +197,6 @@ nav{
 }
 
 .img__restaurant{
-    border: 0px solid transparent;
     border-radius: 15px 15px 0 0;
     object-fit: cover;
     width: 100%;
@@ -301,7 +292,8 @@ li{
 .return{
     display: flex;
     align-items: center;
-    margin: auto;
+    margin-left: 2em;
+    margin-right: auto;
 }
 
 /*---------------------------------*/
@@ -364,6 +356,11 @@ li{
     border-top: 4px solid #99E2D0;
 }
 
+.card__part{
+    display: flex;
+    flex-direction: column;
+}
+
 .box--entree, .box--plat, .box--dessert{
     animation: fade-in 1.5s;
     animation-fill-mode: both;
@@ -390,7 +387,6 @@ li{
 
 .card__box{
     display: flex;
-    position: relative;
     justify-content: space-between;
 }
 
@@ -458,9 +454,10 @@ li{
     position: fixed;
     height: 100%;
     width: 100%;
-    background-color: hsla(0,0%,100%,.9);
+    background-color: #424242;
+    opacity: 0.9;
     animation: loader;
-    animation-delay: 3s;
+    animation-delay: 0.1s;
     animation-fill-mode: forwards;
     z-index: 2;
     display: flex;
@@ -543,11 +540,48 @@ li{
 }
 
 /*---------------------------------------------*/
-/*==		OPTIMISATION POUR GRANDS ÉCRANS 	*/ 
+/*==		OPTIMISATION POUR TABLETTES 	*/
+/*          MIN-WIDTH : 760px       */ 
 /*--------------------------------------------*/
 
+@media only screen and (min-width:760px){
 
-/*@media only screen and (min-width:640px){
+    ol{
+        display: flex;
+        flex-direction: row;
+    }
 
+    .btn_nav{
+        margin-right: 2em;
+    }
 
-}*/
+    .menu{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .box--restaurant{
+        width: 45%;
+        margin: auto;
+        margin-bottom: 3em;
+    }
+
+    .box--entree, .box--plat, .box--dessert{
+        width: 95%;
+    }
+}
+
+/*---------------------------------------------*/
+/*==		OPTIMISATION DESKTOP   	*/
+/*          MIN-WIDTH : 1024px       */ 
+/*--------------------------------------------*/
+
+@media only screen and (min-width:1024px){
+    
+    .restaurant__card{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+    }
+}
