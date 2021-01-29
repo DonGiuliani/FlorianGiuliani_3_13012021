@@ -314,6 +314,10 @@ li{
     margin-top: -3em;
 }
 
+.menu{
+    width: 100%;
+}
+
 .card{
     display: flex;
     flex-direction: column;
