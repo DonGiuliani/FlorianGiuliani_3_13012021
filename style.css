@@ -46,7 +46,7 @@ strong{
     font-size: 1.2em;
 }
 
-.title, h1, strong{
+.title, h1, h2, strong{
     letter-spacing: -0.7px;
 }
 
@@ -491,7 +491,7 @@ li{
     color: #FF79DA;
 }
 
-.f, .o2, .o3, .d{
+.f, .-o, .-oo, .d{
     color: #9356DC;
 }
 
@@ -511,11 +511,11 @@ li{
     animation-delay: 0.4s;
 }
 
-.o2{
+.-o{
     animation-delay: 0.5s;
 }
 
-.o3{
+.-oo{
     animation-delay: 0.6s;
 }
 
