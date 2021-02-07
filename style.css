@@ -2,23 +2,22 @@
 /* ==            SOMMAIRE              */
 /*---------------------------------------- */
 
-/* L		- 1 - */
-/* L		- 2 - */
-/* L		- 3 - */
-
-
+/* RÉGLAGES MOBILES */
+/* OPTIMISATIONS TABLETTE */
+/* OPTIMISATIONS DESKTOP */
 
 /* ---------------------------------------- */
 /* ==       CODES COULEURS           */
 /*---------------------------------------- */
+
 /*
-
-Background (light grey) : #F2F2F2
-Background button (purple) : #9356DC
-Background Footer (drak grey) : #424242
-Icon "Fonctionnement" (grey) : #6e6e6e
-Box-shadow : #e0e0e0
-
+PRINCIPALE : #9356DC
+SECONDAIRE : #FF79DA
+TERTIAIRE  : #99E2D0
+BACKGROUND : #F2F2F2
+BOX-SHADOW : #E0E0E0
+ICONS      : #6E6E6E
+*/
 
 /*------------------------------------------*/
 /*==		RÉGLAGES MOBILES		*/
@@ -114,13 +113,13 @@ form{
     padding: 1em 1.5em 1em 1.5em;
     background: linear-gradient(to bottom right, #FF79DA,#9356DC);
     color: #FFFFFF;
-    box-shadow: 5px 5px 5px #e0e0e0;
+    box-shadow: 5px 5px 5px #E0E0E0;
     transition: box-shadow 0.2s, opacity 0.5s;
 }
 
 .btn_purple:hover{
     opacity: 0.8;
-    box-shadow: 10px 10px 5px #e0e0e0;
+    box-shadow: 10px 10px 5px #E0E0E0;
 }
 
 /*-------------------------*/
@@ -187,13 +186,11 @@ nav h1{
 
 .box{
     position: relative;
-
     border-radius: 15px;
     box-shadow: 5px 5px 5px #e0e0e0;
     color: #000000;
     background-color: #FFFFFF;
     overflow: hidden;
-
     margin-bottom: 1.5em;
 }
 
@@ -280,7 +277,7 @@ li{
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
 /*---------------------------------------*/
-/*             INDEX2.HTML               */
+/*             PAGES MENU                */
 /*---------------------------------------*/
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
