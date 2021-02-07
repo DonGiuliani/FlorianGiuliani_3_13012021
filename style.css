@@ -29,12 +29,9 @@ Box-shadow : #e0e0e0
 /*------------------------------*/
 
 body{
-    margin: 0;
-}
-
-main{
     font-family: "roboto", arial, sans-serif;
     font-size: 14px;
+    margin: 0;
 }
 
 a{
